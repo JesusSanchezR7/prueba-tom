@@ -1,9 +1,12 @@
-import os
-import sys
-import pathlib
-import importlib.util
+#import os
+#import sys
+#import pathlib
+#import importlib.util
 import pytest
+#Agregado jesus
+from main import Calculator
 
+"""
 def _find_src_dir() -> pathlib.Path | None:
     here = pathlib.Path(__file__).resolve()
     cwd = pathlib.Path.cwd()
@@ -60,13 +63,13 @@ except ModuleNotFoundError:
     assert spec and spec.loader  # guard for type checkers
     spec.loader.exec_module(module)
     Calculator = module.Calculator
-
+"""
 
 def test_sum():
     assert Calculator().sum(2, 2) == 4
 
 
-def test_subtract():
+def test_subtract():   #CORRECTO CAMBAIR EL NOMBRE DE LA FUNCION DE MAIN.PY
     assert Calculator().subtract(5, 3) == 2
 
 
